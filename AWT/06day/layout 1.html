@@ -1,0 +1,116 @@
+<html>
+	<head>
+		
+		<title>Layout 1</title>
+		
+		<style type="text/css">
+			*{font-size:22px;font-weight:bold;}
+			#R1{background-color:rgb(9, 185, 243);height:50px;padding-top:20px;width:98%;padding-left:2%;margin-bottom:10px;}
+			#R2{height:60px;width:100%;padding-top:7px;text-align:center;margin-bottom:10px;}
+			#R3{background-color:rgb(8, 130, 237);height:70px;width:100%;padding-top:60px;text-align:center;margin-bottom:10px;}
+			#R4{height:600px;width:100%;margin-bottom:10px;}
+			#R4C1{width:28%;margin-right:2%;}
+			#R4C2{width:70%;}
+			#R4 div{float:left;height:320px;padding-top:280px;text-align:center;background-color:yellow;}
+            #R5{background-color:rgba(9, 153, 243, 0.751);height:60px;width:100%;padding-top:7px;text-align:center;margin-bottom:10px;}	
+	</style>
+		
+	</head>
+	<body>
+		<div>
+			<div id="R1">
+				Logo
+			</div>
+			<div id="R2">
+				<nav class="navbar">
+					<a class="brand" href="#">Vinit</a>
+					<ul>
+					  <li>
+						<a href="#">Home</a>
+					  </li>
+					  <li>
+						<a href="#">About</a>
+					  </li>
+					  <li>
+						<a href="#">Profile</a>
+					  </li>
+					  <li>
+						<a href="#">Contact</a>
+					  </li>
+					</ul>
+				  </nav>
+				  <style>
+					a {
+			  text-decoration: none;
+			}
+			
+			.navbar {
+			  background-color:yellow;
+			  display: flex;
+			  /* let's align the items so everything is nice and centered */
+			  align-items: center;
+			}
+			
+			/* We want all links in the navbar to be #e7e7e7 */
+			.navbar a {
+			  color: blue;
+			}
+			
+			.navbar ul {
+			 /* Let's reset the margin and padding of the list so it's is flush. */
+			  margin: 0;
+			  padding: 0;
+			  /* Let's remove the bullet points */
+			  list-style-type: none;
+			  /* display the list flex and align the items centered */
+			  display: flex;
+			  align-items:center;
+			}
+			
+			.navbar .brand {
+			  /*Let's make the anchor display block.
+				 This will ensure when we get the full width of the container.
+			  */
+			  display: block;
+			  color:skyblue;
+			 /* Remove padding from top/bottom and add 24px padding right/left */
+			  padding: 0 24px;
+			  font-size: 20px;
+			}
+			
+			.navbar ul li a {
+			  color:green;
+			  padding: 24px;
+			  /*Let's make the anchor display block.
+				 This will ensure when we hover, focus, or is active we get the full width and height 
+				  of the container.
+			  */
+			  display: block;
+			}
+			
+			/* When a user hovers, focuses or if the link is active change the background */
+			.navbar ul a:hover,
+			.navbar ul a:focus,
+			.navbar ul .active {
+			  background-color: #272727;
+			}
+				  </style>
+				
+			</div>
+			<div id="R3">
+				<marquee>Welcome</marquee>
+			</div>
+			<div id="R4">
+				<div id="R4C1">
+					Side Bar
+				</div>
+				<div id="R4C2">
+					Body Area
+				</div>
+			</div>
+			<div id="R5">
+				Footer
+			</div>
+		</div>
+	</body>
+</html>
